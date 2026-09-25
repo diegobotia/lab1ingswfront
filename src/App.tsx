@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import  * as React from 'react';
 import './App.css';
+import CarList from './CarList';
+import logo from './logo.svg';
 
-function App() {
+
+class App extends React.Component<{},any>{
+
+  
+render(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      
       </header>
+
+      <CarList/>
     </div>
   );
 }
-
+}
 export default App;
+
