@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import GiphyImage from './GiphyImage';
+//import './App.css';
 import logo from './logo.svg';
 
 interface Car {
@@ -38,7 +39,8 @@ const CarList: React.FC = () => {
         <h2>Car List</h2>
         {cars.map((car: Car) => (
           <div key={car.id}>
-            {car.name}
+            {car.name} <br/>
+            <GiphyImage name={car.name}/>
           </div>
         ))}
       </div>
